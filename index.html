@@ -4,42 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shakespeares Plays</title>
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/layout.css">
+    <script src="https://kit.fontawesome.com/61e82eaffe.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <section id="eka">
         <h1>Selected Shakespeare Plays</h1>
-        <ul>
-            <li>Comedies</li>
-            <ul>
-                <li><a href="./as-you-like-it">As You Like It</a></li>
-                <li>All's Well That Ends Well</li>
-                <li>A Midsummer Night's Dream</li>
-                <li>Twelfth Night</li>
-            </ul>
-            <li>Tragedies</li>
-            <ul>
-                <li><a href="./media/hamlet.pdf">Hamlet</a></li>
-                <li>Macbeth</li>
-                <li>Romeo and Juliet</li>
-            </ul>
-            <li>Histories</li>
-            <ul>
-                <li>Henry IV (<a href="mailto: henryIV@buckingham.co.uk">email</a>)</li>
+        <ul  class="rinnakkain">
+            <li>Comedies
                 <ul>
-                    <li>Part I</li>
-                    <li>Part II</li>
+                    <li><a id="linkit" href="./as-you-like-it">As You Like It</a></li>
+                    <li>All's Well That Ends Well</li>
+                    <li>A Midsummer Night's Dream</li>
+                    <li>Twelfth Night</li>
                 </ul>
-                <li><a href="https://www.uckingham-palace.co.uk">Henry V</a></li>
-                <li>Richard II</li>
-            </ul>
+            </li>
+            <li>Tragedies
+                <ul>
+                    <li><a id="linkit" href="media/hamlet.pdf">Hamlet <i class="fa-solid fa-file-pdf" class="pdf"></i></a></li>
+                    <li>Macbeth</li>
+                    <li>Romeo and Juliet</li>
+                </ul>
+            </li>
+            <li>Histories
+                <ul>
+                    <li>Henry IV (<i class="fa-solid fa-envelope" class="email-icon"></i> <i class="fa-solid fa-arrow-up-right-from-square" id="arrow"></i> <a id="linkit" href="mailto: henryIV@buckingham.co.uk">email</a>)</li>
+                    <ul>
+                        <li>Part I</li>
+                        <li>Part II</li>
+                    </ul>
+                    <li><a id="linkit" href="https://www.buckingham-palace.co.uk"> <i class="fa-solid fa-arrow-up-right-from-square arrow"></i> Henry V</a></li>
+                    <li>Richard II</li>
+                </ul>
+            </li>
         </ul>
     </section>
     <section id="toka">
         <h2>Shakespeare's Plays</h2>
-        <table>
+        <table class="table-1" id="table-1">
             <tr>
                 <td>As You Like It</td>
                 <td>Comedy</td>
@@ -79,7 +82,7 @@
     </section>
     <section id="kolmas">
         <h2>Shakespear's Sonnets</h2>
-        <table>
+        <table class="table-2" id="table-2">
             <tr>
                 <td>The Fair Youth</td>
                 <td>1-126</td>
@@ -94,6 +97,7 @@
             </tr>
         </table>
     </section>
+    <button id="button">Click me</button>
     <script src="./js/skriptit.js"></script>
 </body>
 </html>

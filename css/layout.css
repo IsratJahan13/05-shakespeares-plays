@@ -9,17 +9,67 @@ body {
 ul {
     list-style: disc;
     padding: 1rem 1rem 1rem 4rem;
+    line-height: 1.5;
 }
 h1, h2 {
     font-size: 2.4rem;
     margin-bottom: 1rem;
 }
-table {
+.table-1 {
     margin-bottom: 1rem;
+    width: 100%;
+    table-layout: fixed;
 }
+.table-2 {
+    margin-bottom: 1rem;
+    width: 66.66%;
+    table-layout: fixed;
+}
+
 tr {
     line-height: 1.5;
 }
 td {
     padding-right: 1rem;
 }
+/* CSS-säännot, jotka lisätään javascriptin avulla */
+.linkit {
+    color: #801A10;
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: underline dotted;
+}
+/* 2. ensimmäisen luettelon elementit rinnakkain flexin avulla */
+/* vanhemman sääntö ul */
+.rinnakkain {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style: none;
+    gap: 1rem;
+}
+/* lasten sääntö li */
+.rinnakkain > * {
+    flex-grow: 1;
+    flex-basis: 0;
+}
+.rinnakkain li ul {
+    background-color: lightgray; 
+    padding-inline-start: 3rem;
+}
+.table-1 tr:nth-child(even){
+    background-color: lightgray;
+}
+.table-2 tr:nth-child(odd){
+    background-color: lightgray;
+}
+.pdf {
+    color: red;
+}
+.email-icon {
+    color: orange;
+}
+.arrow {
+    color: rgb(65, 199, 65);
+}
+
