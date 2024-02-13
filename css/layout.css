@@ -37,7 +37,8 @@ td {
     color: #801A10;
     font-weight: bold;
     font-style: italic;
-    text-decoration: underline dotted;
+    text-decoration: none;
+    border-block-end: #801A10 dotted 3px;
 }
 /* 2. ensimmäisen luettelon elementit rinnakkain flexin avulla */
 /* vanhemman sääntö ul */
@@ -63,13 +64,16 @@ td {
 .table-2 tr:nth-child(odd){
     background-color: lightgray;
 }
-.pdf {
+.fa-file-pdf {
     color: red;
+    margin-inline-start: 0.5rem;
 }
-.email-icon {
+.fa-envelope {
     color: orange;
+    margin-inline-end: 0.5rem;
 }
-.arrow {
-    color: rgb(65, 199, 65);
+.fa-arrow-up-right-from-square {
+    color: green;
+    margin-inline-end: 0.5rem;
 }
 
